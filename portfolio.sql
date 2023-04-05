@@ -3,6 +3,7 @@ select * from CovidDeaths ORDER BY 3,4 where continent is not null
 select * from CovidVaccinations ORDER BY 3,4
 
 
+
 select location,date,total_cases,new_cases,total_deaths,population from CovidDeaths
 
 select location,date,total_cases,total_deaths,(total_deaths/total_cases)*100 as deathperc from CovidDeaths ORDER BY 1,2
